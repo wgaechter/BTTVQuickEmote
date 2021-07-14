@@ -1,0 +1,6 @@
+{
+    "name": "BetterTTV Quick Emote Tool",
+    "description": "Click a BTTV Emote to quickly copy and autofill your chatbox with that emote",
+    "version": "Beta",
+    "manifest_version": "3"
+}
