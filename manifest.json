@@ -1,6 +1,15 @@
 {
     "name": "BetterTTV Quick Emote Tool",
     "description": "Click a BTTV Emote to quickly copy and autofill your chatbox with that emote",
-    "version": "Beta",
-    "manifest_version": "3"
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": ["storage", "tabs"],
+    "host_permissions": ["*://*.twitch.tv/*"],
+    "content_scripts": [{
+        "matches": ["*://*.twitch.tv/*"],
+        "js": ["jquery-3.6.0.min.js", "content.js"]
+    }],
+    "background": {
+        "service_worker": "background.js"
+    }
 }
